@@ -5,7 +5,7 @@ export const workSlider = {
       images: [
         {
           title: "title",
-          path: "/image.png",
+          path: "/newport.png",
         },
         {
           title: "title",
@@ -37,7 +37,7 @@ export const workSlider = {
         },
         {
           title: "title",
-          path: "/image.png",
+          path: "/newport.png",
         },
       ],
     },
