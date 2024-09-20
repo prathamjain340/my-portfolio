@@ -29,22 +29,30 @@ const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaHtml5 key={"html5"} />,
+          <FaCss3 key={"css"} />,
+          <FaJs key={"fj"} />,
+          <FaReact key={"react"} />,
+          <SiNextdotjs key={"next"} />,
+          <SiFramer key={"framer"} />,
+          <FaWordpress key={"word"} />,
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [<SiAdobephotoshop />, <SiCanva />, <FaFigma />],
+        icons: [
+          <SiAdobephotoshop key={"siadobeshop"} />,
+          <SiCanva key="sicanva" />,
+          <FaFigma key={"fafigma"} />,
+        ],
       },
       {
         title: "Programming and DBMS",
-        icons: [<TbBrandCpp />, <SiPython />, <SiMysql />],
+        icons: [
+          <TbBrandCpp key={"tbbrandcpp"} />,
+          <SiPython key={"sipython"} />,
+          <SiMysql key={"simysql"} />,
+        ],
       },
     ],
   },
@@ -128,7 +136,6 @@ import CountUp from "react-countup";
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  console.log(index);
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
@@ -251,8 +258,12 @@ const About = () => {
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
                     {/* icons */}
-                    {item.icons?.map((icon, itemIndex) => {
-                      return <div className="text-2xl text-white">{icon}</div>;
+                    {item.icons?.map((icons, itemIndex) => {
+                      return (
+                        <div key={itemIndex} className="text-2xl text-white">
+                          {icons}
+                        </div>
+                      );
                     })}
                   </div>
                 </div>
