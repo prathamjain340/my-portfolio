@@ -13,7 +13,7 @@ export const workSlider = {
         },
         {
           title: "title",
-          path: "/TicTacToe (1) (1).png", //DO NOT REMOVE THE (1) (1)
+          path: "/tictac.png", //DO NOT REMOVE THE (1) (1)
         },
         {
           title: "title",
@@ -29,7 +29,7 @@ export const workSlider = {
         },
         {
           title: "title",
-          path: "/TicTacToe (1) (1).png", //DO NOT REMOVE THE (1) (1)
+          path: "/tictac.png", //DO NOT REMOVE THE (1) (1)
         },
         {
           title: "title",
